@@ -1,0 +1,482 @@
+{
+  "userFlow": {
+    "title": "Wishlist App User Flow",
+    "version": "1.0",
+    "description": "Complete user journey through the wishlist mobile application",
+    "screens": [
+      {
+        "id": "start",
+        "name": "App Launch",
+        "type": "entry_point",
+        "position": { "x": 400, "y": 50 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "User Opens App",
+          "description": "Initial app launch point",
+          "color": "#E3F2FD",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "wishlist_main",
+        "name": "My Wishlist",
+        "type": "main_screen",
+        "position": { "x": 400, "y": 150 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "My Wishlist Screen",
+          "description": "Main screen showing all wishlist items",
+          "color": "#F3E5F5",
+          "shape": "rectangle",
+          "elements": [
+            "Product listings",
+            "Share button",
+            "Checkout button",
+            "Rate My Product section"
+          ]
+        }
+      },
+      {
+        "id": "user_action_decision",
+        "name": "User Action Decision",
+        "type": "decision_point",
+        "position": { "x": 400, "y": 250 },
+        "dimensions": { "width": 120, "height": 80 },
+        "properties": {
+          "title": "User Action",
+          "description": "Decision point for user interactions",
+          "color": "#FFF9C4",
+          "shape": "diamond"
+        }
+      },
+      {
+        "id": "product_details",
+        "name": "Product Details",
+        "type": "detail_screen",
+        "position": { "x": 100, "y": 380 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Product Details View",
+          "description": "Detailed view of selected product",
+          "color": "#E8F5E8",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "product_info",
+        "name": "Product Information",
+        "type": "info_screen",
+        "position": { "x": 100, "y": 480 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "View Product Info",
+          "description": "Product specifications and details",
+          "color": "#E8F5E8",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "comments_reviews",
+        "name": "Comments & Reviews",
+        "type": "content_screen",
+        "position": { "x": 100, "y": 580 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Comments and Reviews",
+          "description": "User reviews and comments section",
+          "color": "#E8F5E8",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "share_modal",
+        "name": "Share Modal",
+        "type": "modal",
+        "position": { "x": 400, "y": 380 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Share Modal",
+          "description": "Modal for sharing product",
+          "color": "#FFF3E0",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "share_options",
+        "name": "Share Options",
+        "type": "action_screen",
+        "position": { "x": 300, "y": 480 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Share With Options",
+          "description": "Different sharing methods",
+          "color": "#FFF3E0",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "user_permissions",
+        "name": "User Permissions",
+        "type": "settings_screen",
+        "position": { "x": 500, "y": 480 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "User Can Section",
+          "description": "User permission settings for sharing",
+          "color": "#FFF3E0",
+          "shape": "rectangle",
+          "elements": [
+            "View toggle",
+            "Comment toggle"
+          ]
+        }
+      },
+      {
+        "id": "copy_link",
+        "name": "Copy Link",
+        "type": "action",
+        "position": { "x": 400, "y": 580 },
+        "dimensions": { "width": 120, "height": 50 },
+        "properties": {
+          "title": "Copy Link",
+          "description": "Copy shareable link action",
+          "color": "#FFF3E0",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "save_action",
+        "name": "Save Settings",
+        "type": "action",
+        "position": { "x": 550, "y": 580 },
+        "dimensions": { "width": 120, "height": 50 },
+        "properties": {
+          "title": "Save",
+          "description": "Save sharing settings",
+          "color": "#FFF3E0",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "rate_product",
+        "name": "Product Rating",
+        "type": "rating_screen",
+        "position": { "x": 700, "y": 380 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Rate My Product",
+          "description": "Product rating section",
+          "color": "#FCE4EC",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "star_rating",
+        "name": "Star Rating",
+        "type": "rating_input",
+        "position": { "x": 700, "y": 480 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "5-Star Rating",
+          "description": "Star rating input component",
+          "color": "#FCE4EC",
+          "shape": "rectangle",
+          "elements": [
+            "Star rating component",
+            "Save button"
+          ]
+        }
+      },
+      {
+        "id": "checkout",
+        "name": "Checkout",
+        "type": "checkout_screen",
+        "position": { "x": 850, "y": 380 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Checkout Screen",
+          "description": "Initial checkout screen",
+          "color": "#E1F5FE",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "review_items",
+        "name": "Review Items",
+        "type": "review_screen",
+        "position": { "x": 850, "y": 480 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Review Selected Items",
+          "description": "Review cart items before payment",
+          "color": "#E1F5FE",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "payment",
+        "name": "Payment",
+        "type": "payment_screen",
+        "position": { "x": 850, "y": 580 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Proceed to Payment",
+          "description": "Payment processing screen",
+          "color": "#E1F5FE",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "order_confirmation",
+        "name": "Order Confirmation",
+        "type": "confirmation_screen",
+        "position": { "x": 850, "y": 680 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Order Confirmation",
+          "description": "Order successful confirmation",
+          "color": "#E1F5FE",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "id": "remove_item",
+        "name": "Remove Item",
+        "type": "action",
+        "position": { "x": 1100, "y": 380 },
+        "dimensions": { "width": 150, "height": 60 },
+        "properties": {
+          "title": "Remove from Wishlist",
+          "description": "Remove item confirmation",
+          "color": "#FFEBEE",
+          "shape": "rectangle"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "from": "start",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "App Launch",
+        "trigger": "automatic"
+      },
+      {
+        "from": "wishlist_main",
+        "to": "user_action_decision",
+        "type": "user_interaction",
+        "label": "User Interaction",
+        "trigger": "user_action"
+      },
+      {
+        "from": "user_action_decision",
+        "to": "product_details",
+        "type": "navigation",
+        "label": "Tap Product",
+        "trigger": "tap",
+        "condition": "product_selected"
+      },
+      {
+        "from": "user_action_decision",
+        "to": "share_modal",
+        "type": "modal_open",
+        "label": "Share",
+        "trigger": "tap",
+        "condition": "share_button_pressed"
+      },
+      {
+        "from": "user_action_decision",
+        "to": "rate_product",
+        "type": "navigation",
+        "label": "Rate Product",
+        "trigger": "tap",
+        "condition": "rate_section_accessed"
+      },
+      {
+        "from": "user_action_decision",
+        "to": "checkout",
+        "type": "navigation",
+        "label": "Checkout",
+        "trigger": "tap",
+        "condition": "checkout_button_pressed"
+      },
+      {
+        "from": "user_action_decision",
+        "to": "remove_item",
+        "type": "action",
+        "label": "Delete/Swipe",
+        "trigger": "swipe_or_delete",
+        "condition": "item_removal_action"
+      },
+      {
+        "from": "product_details",
+        "to": "product_info",
+        "type": "navigation",
+        "label": "View Details",
+        "trigger": "automatic"
+      },
+      {
+        "from": "product_info",
+        "to": "comments_reviews",
+        "type": "navigation",
+        "label": "View Reviews",
+        "trigger": "tap"
+      },
+      {
+        "from": "product_info",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "Back",
+        "trigger": "back_button"
+      },
+      {
+        "from": "comments_reviews",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "Back",
+        "trigger": "back_button"
+      },
+      {
+        "from": "share_modal",
+        "to": "share_options",
+        "type": "navigation",
+        "label": "Share Options",
+        "trigger": "tap"
+      },
+      {
+        "from": "share_modal",
+        "to": "user_permissions",
+        "type": "navigation",
+        "label": "User Permissions",
+        "trigger": "tap"
+      },
+      {
+        "from": "share_options",
+        "to": "copy_link",
+        "type": "action",
+        "label": "Copy Link",
+        "trigger": "tap"
+      },
+      {
+        "from": "user_permissions",
+        "to": "save_action",
+        "type": "action",
+        "label": "Save Settings",
+        "trigger": "tap"
+      },
+      {
+        "from": "copy_link",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "Return",
+        "trigger": "automatic"
+      },
+      {
+        "from": "save_action",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "Return",
+        "trigger": "automatic"
+      },
+      {
+        "from": "rate_product",
+        "to": "star_rating",
+        "type": "navigation",
+        "label": "Rate",
+        "trigger": "tap"
+      },
+      {
+        "from": "star_rating",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "Save Rating",
+        "trigger": "save_button"
+      },
+      {
+        "from": "checkout",
+        "to": "review_items",
+        "type": "navigation",
+        "label": "Review Cart",
+        "trigger": "automatic"
+      },
+      {
+        "from": "review_items",
+        "to": "payment",
+        "type": "navigation",
+        "label": "Proceed",
+        "trigger": "confirm_button"
+      },
+      {
+        "from": "payment",
+        "to": "order_confirmation",
+        "type": "navigation",
+        "label": "Payment Success",
+        "trigger": "payment_processed"
+      },
+      {
+        "from": "order_confirmation",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "Return Home",
+        "trigger": "done_button"
+      },
+      {
+        "from": "remove_item",
+        "to": "wishlist_main",
+        "type": "navigation",
+        "label": "Confirm Remove",
+        "trigger": "confirm_removal"
+      }
+    ],
+    "user_actions": [
+      {
+        "action": "tap_product",
+        "description": "User taps on a product in the wishlist",
+        "target_screens": ["product_details"]
+      },
+      {
+        "action": "share_product",
+        "description": "User initiates sharing a product",
+        "target_screens": ["share_modal"]
+      },
+      {
+        "action": "rate_product",
+        "description": "User accesses product rating section",
+        "target_screens": ["rate_product"]
+      },
+      {
+        "action": "checkout_items",
+        "description": "User proceeds to checkout",
+        "target_screens": ["checkout"]
+      },
+      {
+        "action": "remove_item",
+        "description": "User removes item from wishlist",
+        "target_screens": ["remove_item"]
+      },
+      {
+        "action": "navigate_back",
+        "description": "User navigates back to previous screen",
+        "target_screens": ["wishlist_main"]
+      }
+    ],
+    "metadata": {
+      "created_date": "2025-09-21",
+      "platform": "iOS",
+      "app_version": "1.0",
+      "flow_type": "mobile_app",
+      "total_screens": 16,
+      "total_connections": 21,
+      "primary_color_scheme": [
+        "#E3F2FD",
+        "#F3E5F5", 
+        "#E8F5E8",
+        "#FFF3E0",
+        "#FCE4EC",
+        "#E1F5FE",
+        "#FFEBEE",
+        "#FFF9C4"
+      ]
+    }
+  }
+}
